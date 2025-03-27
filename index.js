@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173', 'https://quiz-game-frontend.netlify.app'],
+    origin: ['http://localhost:5173', 'https://render-quizapp.netlify.app'],
     methods: ['GET', 'POST'],
     credentials: true,
   },
@@ -20,7 +20,7 @@ const io = new Server(server, {
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://quiz-game-frontend.netlify.app'],
+  origin: ['http://localhost:5173', 'https://render-quizapp.netlify.app'],
   methods: ['GET', 'POST'],
   credentials: true,
 }));
